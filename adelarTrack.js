@@ -12,5 +12,5 @@ if(!document.cookie){
 }
 
 var xhttp = new XMLHttpRequest();
-xhttp.open("POST", "http://localhost:8888", true);
+xhttp.open("POST", "http://localhost:8888/track", true);
 xhttp.send('{"trackCode":"' + document.cookie + '","URL":"'+ document.URL +'"}');
